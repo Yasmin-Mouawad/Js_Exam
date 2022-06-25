@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS EXAM</title> 
+        <link rel="icon" href="images/js-icon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+<body>
+    
+    <div class="container text-center mt-5">
+        <!-- ----------- serach section ----------- -->
+        <div class="row divSearch">
+            <div class="col-md-6">
+                <div id="getMovies">
+                    <input id="inputGetMovies" type="text" class="w-100" placeholder="get movies by word..."/>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div id="search">
+                    <input id="inputSearch" type="text" class="w-100" placeholder="search..."/>
+                </div>
+            </div>
+        </div>
+
+
+      <!-- ----------- display movies ------------ -->
+        <div class="row mt-5" id="rowDate">
+            
+        </div>
+
+
+     <!-- -------------- contact us------------- -->
+
+     <div class="row contactUs">
+         <h3>ContactUs...</h3>
+         <div class="col-md-6">
+             <input  type="text" id="inputUserName" class="w-100" placeholder="Enter Your Name"/>
+         </div>
+         <div class="col-md-6">
+            <input  type="email" id="inputUserEmail" class="w-100" placeholder="Enter Your Email"/>
+            <p id="errorEmail"  class="lead" style="color: #f00;"></p>
+        </div>
+        <div class="col-md-6">
+            <input  type="tel" id="inputUserPhone" class="w-100" placeholder="Enter Your Phone"/>
+        </div>
+        <div class="col-md-6">
+            <input  type="number" id="inputUserAge" class="w-100" placeholder="Enter Your Age"/>
+        </div>
+        <div class="col-md-6">
+            <input  type="password" id="inputUserPassword" class="w-100" placeholder="Enter Your password"/>
+        </div>
+        <div class="col-md-6">
+            <input  type="password" id="inputUserRepassword" class="w-100" placeholder="re-Enter Your Password"/>
+            <p id="errorPassword"  class="lead" style="color: #f00;"></p>
+        </div> 
+
+        <p id="error" class="lead" style="color: #f00;"></p>
+
+        <button id="sendMessage" class="col-md-1 btn btn-outline-danger">Submit</button>
+     </div>
+
+        <!------------ side bar section -------------- -->
+
+        <div id="secNav" class="d-flex align-items-lg-start">
+             <div id="secContent">
+                <div class="itemContent">
+                    <ul>
+                        <li class="item1"><a class="nav-category" href="#" value="now_playing">New playing</a></li>
+                        <li class="item2"><a class="nav-category" href="#" value="popular">Popular</a></li>
+                        <li class="item3"><a class="nav-category" href="#" value="top_rated">Top Rated</a></li>
+                        <li class="item4"><a class="nav-category" href="#" value="latest">Trending</a></li>
+                        <li class="item5"><a class="nav-category" href="#" value="upcoming">Upcoming</a></li>
+                        <li class="item6"><a class="nav-category" href="#">Contact Us</a></li>
+                    </ul> 
+                </div>
+ 
+                <div class="itemSocial">
+                    <ul>
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-solid fa-globe"></i>
+                    </ul>
+                </div>
+                
+                <div class="copyRight">
+                    <p>Copyright Â© 2022 All Rights <br> Reserved.</p>
+                </div>
+            </div>
+
+             <div class="sideBar">
+                <div class="logo">
+                   <img src="images/logo.png" alt="">
+                </div>
+     
+                <div class="toggleBar">
+                    <i id="open" class="fa-solid fa-bars"></i> 
+                </div>
+     
+                <div class="socail">
+                   <i class="fa-solid fa-globe"></i>
+                </div>
+     
+                <div class="share pt-3">
+                 <i class="fas fa-share-alt"></i>
+              </div>
+             </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
